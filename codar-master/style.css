@@ -22,6 +22,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
     padding: 15px;
     width: 100%;
     height: 100%;
@@ -29,6 +30,12 @@ img {
 
 .logo {
     color: #D6000D;
+    font-weight: 900;
+}
+
+.logo span {
+    color: black;
+    font-size: 3rem;
 }
 
 .nav-list {
@@ -73,10 +80,122 @@ nav {
 }
 
 .icone_menu {
-    
+    color: #D6000D;
 }
 
-.__imagem {
-    width: 100%;
-    height: 100%;
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.__imagemBanner {
+    max-width: 75%;
+    height: 75%;
+}
+
+.banner-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+    width: 100%;
+}
+
+.banner-txt p {
+    font-weight: 900;
+}
+
+.banner-txt h1 {
+    font-weight: 900;
+    color: #D6000D;
+    font-size: 2.5rem;
+}
+
+.banner-txt button {
+    background-color: #D6000D;
+    color: white;
+    padding: 15px;
+    width: 85%;
+    border: none;
+    border-radius: 13px;
+    margin-top: 25px;
+    font-size: 0.9rem;
+}
+
+.servicos {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.__imagemServico {
+    max-width: 50%;
+    height: 50%;
+}
+
+.servicos_text p {
+    margin: 25px 0px;
+}
+
+.servicos_text i {
+    color: #D6000D;
+    margin-right: 10px;
+}
+
+.contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 23px;
+}
+
+.contactos p{
+   font-weight: 900;
+   margin-bottom: 10px;
+}
+
+.contactos input{
+    width: 65%;
+    border: none;
+    border-radius: 13px;
+    background-color: rgb(219, 218, 218);
+    color: rgb(149, 149, 149);
+    padding: 15px;
+    margin-bottom: 10px;
+ }
+
+ .contactos button{
+    width: 65%;
+    border: none;
+    border-radius: 13px;
+    background-color: #D6000D;
+    color: white;
+    font-weight: 500;
+    padding: 15px;
+    margin-bottom: 10px;
+ }
+
+
+.profissionais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.descricao::before{
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: #D6000D;
+}
+
+.__profissional {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-self:center ;
+}
+
