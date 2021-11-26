@@ -1,22 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,700&display=swap');
 
-*{
+/*RESET BASICO*/
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    width:100%;
+body,main,footer,img {
+    width: 100%;
     height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
     font-family: 'Roboto', sans-serif;
     position: relative;
 }
 
-img {
-   width: 100%;
-   height: 100%; 
-}
+/*Fim do reset*/
+
+/*Header*/
 
 .row {
     display: flex;
@@ -31,6 +39,7 @@ img {
 .logo {
     color: #D6000D;
     font-weight: 900;
+    font-size: 2rem;
 }
 
 .logo span {
@@ -43,10 +52,6 @@ img {
     transition: display 51s ease;
 }
 
-nav {
-    
-}
-
 .nav-list.ative {
     position: absolute;
     top: 0;
@@ -56,21 +61,22 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    list-style: none; 
+    list-style: none;
     background-color: #D6000D;
 }
 
 .icone_xmenu {
     position: absolute;
     right: 15px;
-    top: 35px;
+    top: 20px;
+    right: 2;
 }
 
-.nav-list li  {
-   padding: 10px;
-   margin: 50px 0px;
-   font-size: 20px;
-   
+.nav-list li {
+    padding: 10px;
+    margin: 50px 0px;
+    font-size: 20px;
+
 }
 
 .nav-list li a {
@@ -81,6 +87,10 @@ nav {
 .icone_menu {
     color: #D6000D;
 }
+
+/*Fim Header*/
+
+/*Main*/
 
 .banner {
     display: flex;
@@ -150,12 +160,12 @@ nav {
     margin-top: 23px;
 }
 
-.contactos p{
-   font-weight: 900;
-   margin-bottom: 10px;
+.contactos p {
+    font-weight: 900;
+    margin-bottom: 10px;
 }
 
-.contactos input{
+.contactos input {
     width: 65%;
     border: none;
     border-radius: 13px;
@@ -163,9 +173,9 @@ nav {
     color: rgb(149, 149, 149);
     padding: 15px;
     margin-bottom: 10px;
- }
+}
 
- .contactos button{
+.contactos button {
     width: 65%;
     border: none;
     border-radius: 13px;
@@ -174,7 +184,7 @@ nav {
     font-weight: 500;
     padding: 15px;
     margin-bottom: 10px;
- }
+}
 
 
 .profissionais {
@@ -184,17 +194,93 @@ nav {
     margin-top: 70px;
 }
 
-.descricao::before{
-    content: '';
-    width: 100px;
-    height: 100px;
-    background-color: #D6000D;
+.profissionais .__profissional:first-child {
+    margin-bottom: 30px;
 }
 
 .__profissional {
     display: flex;
     flex-direction: row;
     width: 90%;
-    align-self:center ;
+    align-self: center;
+    background-color: rgb(220 220 220);
+    padding: 23px 10px;
+    border-radius: 10px;
 }
 
+.content_c {
+    margin: 0px 12px;
+}
+
+.circulo {
+    width: 55px;
+    height: 55px;
+    background-color: #D6000D;
+    border-radius: 50%;
+}
+
+.nome {
+    line-height: 17px;
+    margin-top: 10px;
+}
+
+/*Fim Main*/
+
+/*Footer*/
+
+.content_f {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    padding: 0px 30px;
+}
+
+.codar_f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.codar_f h1 {
+    margin-top: 20px;
+    font-size: 3rem;
+}
+
+.sobre_f,.contactos_f,.redesociais {
+    width: 57%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contactos_f h1 {
+    margin-bottom: 10px;
+
+}
+
+.contactos_f p:nth-child(2) {
+   margin-bottom: 10px;
+}
+
+.contactos_f p:nth-child(3) {
+    margin-bottom: 5px;
+ }
+
+.redesociais h1 {
+    margin-bottom: 10px;
+}
+
+.icones_redes a {
+    color: red;
+    font-size: 2.5rem;
+}
+
+.icones_redes i {
+    margin-right: 20px;
+}
+
+.icones_redes i:last-child{
+    margin-right: 0;
+}
