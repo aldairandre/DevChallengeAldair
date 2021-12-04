@@ -128,7 +128,7 @@ body {
     background-color: #D6000D;
     color: white;
     padding: 15px;
-    width: 85%;
+    min-width:68%;
     border: none;
     border-radius: 13px;
     margin-top: 25px;
@@ -314,7 +314,7 @@ body {
     .banner-txt {
         flex-direction: column;
         align-items: flex-start;
-        width: 37%;
+        width: 40%;
     }
 
     .servicos {
@@ -352,7 +352,7 @@ body {
 
     .profissionais {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     .profissionais .__profissional:first-child {
@@ -361,7 +361,7 @@ body {
 
     .__profissional {
         flex-direction: row;
-        width: 40%;
+        width: 43%;
         align-self: center;
     }
 
@@ -376,8 +376,9 @@ body {
 
     .content_f {
         flex-direction: row;
+        justify-content: space-between;
         align-items: baseline;
-        margin-top: 20px;
+        margin-top: 181px;
         padding: 33px 30px;
     }
 
